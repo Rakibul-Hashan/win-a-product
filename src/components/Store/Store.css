@@ -1,0 +1,32 @@
+.store-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.products-container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sidebar-container {
+    padding: 50px 20px;
+}
+
+.sidebar-single-product {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.sidebar-product-img {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    object-fit: contain;
+}
