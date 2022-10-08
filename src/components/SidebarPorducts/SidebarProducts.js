@@ -3,7 +3,7 @@ import { FaTrashAlt } from 'react-icons/fa';
 
 
 const SidebarProducts = ({product, deleteProduct, sidebarProducts}) => {
-    const {id,title, price, description,category, image } = product;
+    const {title, image } = product;
     return (
         <div className='sidebar-single-product' >
             <div><img className='sidebar-product-img' src={image} alt={title} /></div>
