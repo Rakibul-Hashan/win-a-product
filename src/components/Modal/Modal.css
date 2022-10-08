@@ -2,7 +2,6 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Black background with opacity */
     position: fixed;
     display: flex;
     justify-content: center;
@@ -72,4 +71,29 @@
 
 #cancelBtn {
     background-color: crimson;
+}
+
+
+@media screen and (max-width:520px) {
+    .modalBackground {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    h1 .title {
+        font-size: 24px;
+    }
+
+    .modalContainer {
+        width: 70%;
+        height: auto;
+        padding: 15px;
+    }
+
 }

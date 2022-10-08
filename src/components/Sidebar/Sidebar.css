@@ -1,3 +1,10 @@
+.sidebar-container {
+    position: sticky;
+    top: 00px;
+    padding-top: 80px;
+    height: calc(100vh - 80px);
+}
+
 .openModalBtn {
     width: 150px;
     height: 45px;
@@ -20,4 +27,32 @@
     border-radius: 8px;
     font-size: 20px;
     cursor: pointer;
+}
+
+/* delete */
+.delete-btn {
+    background: #fff;
+    padding: 10px 7px 5px 8px;
+    border-radius: 50%;
+    height: 20px px;
+    width: 20px;
+    text-align: center;
+    transition: background 0.4s ease;
+}
+
+.delete-btn:hover {
+    background: red;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* responsive */
+@media screen and (max-width:520px) {
+
+    .sidebar-container {
+        bottom: 0px;
+        padding: 0;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 }

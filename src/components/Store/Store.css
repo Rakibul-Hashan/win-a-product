@@ -9,8 +9,9 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+
 .sidebar-container {
-    padding: 50px 20px;
+    padding: 50px 10px;
 }
 
 .sidebar-single-product {
@@ -29,4 +30,19 @@
     height: 30px;
     box-sizing: border-box;
     object-fit: contain;
+}
+
+/* responsive */
+@media screen and (max-width:520px) {
+
+    .products-container {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .store-container {
+        display: block;
+
+    }
 }

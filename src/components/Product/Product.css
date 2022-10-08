@@ -115,3 +115,11 @@
 .product-button a:hover {
     color: #fbb72c;
 }
+
+/* responsive */
+@media screen and (max-width:520px) {
+    .product-card {
+        width: 100%;
+    }
+
+}
