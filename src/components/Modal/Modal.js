@@ -1,7 +1,8 @@
 import React from "react";
 import "./Modal.css";
 function Modal({ closeModal, randomProduct }) {
-  console.log(randomProduct)
+  console.log('kire vai shomossha ki?/',randomProduct)
+  console.log(!randomProduct)
   if(!randomProduct){
     randomProduct = {
       title: 'No Product to Show'
@@ -38,7 +39,6 @@ function Modal({ closeModal, randomProduct }) {
           >
             Cancel
           </button>
-          <button>Continue</button>
         </div>
       </div>
     </div>

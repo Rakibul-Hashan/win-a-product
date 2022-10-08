@@ -36,6 +36,14 @@ const Store = () => {
 
 
     }
+//delete product
+const deleteProduct =(selectedProduct, sidebarProducts) => {
+    const exist = sidebar.find(product => selectedProduct.id === product.id);
+    const rest = sidebar.filter(product => selectedProduct.id !== product.id);
+    const newSidebar = rest;
+    setSidebar(newSidebar)
+    console.log('sss', exist, sidebarProducts, rest)
+}
 
     const spinHandler = (sidebarProducts) => {
         // Choose random product
@@ -44,6 +52,11 @@ const Store = () => {
         setRandom(randomProduct);
 
     }
+    const spinAgain = () => {
+        const newSidebar = [];
+        setSidebar(newSidebar)
+    }
+
     
     return (
         <div className="store-container">
@@ -63,6 +76,8 @@ const Store = () => {
                     spinHandler={spinHandler}
                     setOpenModal={setOpenModal}
                     openModal={openModal}
+                    spinAgain={spinAgain}
+                    deleteProduct={deleteProduct}
                 ></Sidebar>
 
 

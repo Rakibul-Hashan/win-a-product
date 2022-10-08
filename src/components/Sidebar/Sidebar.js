@@ -1,7 +1,7 @@
 import React from 'react';
 import SidebarProducts from '../SidebarPorducts/SidebarProducts';
 import './Sidebar.css';
-const Sidebar = ({ sidebarProducts, spinHandler, randomProduct, setOpenModal, openModal }) => {
+const Sidebar = ({ sidebarProducts, spinHandler, randomProduct, setOpenModal, openModal,spinAgain,deleteProduct}) => {
     return (
         <aside>
             {
@@ -9,6 +9,8 @@ const Sidebar = ({ sidebarProducts, spinHandler, randomProduct, setOpenModal, op
                     <SidebarProducts
                         key={product.id}
                         product={product}
+                        deleteProduct={deleteProduct}
+                        sidebarProducts={sidebarProducts}
                     ></SidebarProducts>
                 )
             }
@@ -20,7 +22,9 @@ const Sidebar = ({ sidebarProducts, spinHandler, randomProduct, setOpenModal, op
                     spinHandler(sidebarProducts)
                 }}>Open</button>
 
-                <button className='spin-again'>Clear</button>
+                <button className='spin-again'
+                    onClick={() => spinAgain()}
+                >Clear</button>
             </div>
         </aside>
     );
