@@ -54,7 +54,8 @@ const deleteProduct =(selectedProduct, sidebarProducts) => {
     }
     const spinAgain = () => {
         const newSidebar = [];
-        setSidebar(newSidebar)
+        setSidebar(newSidebar);
+       
     }
 
     

@@ -3,6 +3,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,14 +87,18 @@
         align-items: center; */
     }
 
-    h1 .title {
-        font-size: 24px;
+    .title h1 {
+        font-size: 22px;
     }
 
     .modalContainer {
         width: 70%;
         height: auto;
         padding: 15px;
+    }
+
+    .body p {
+        font-size: 16px;
     }
 
 }
